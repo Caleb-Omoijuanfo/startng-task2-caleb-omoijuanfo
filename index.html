@@ -10,6 +10,38 @@
   </head>
   <body>
     <div class="container">
+      <button type="button" name="button" class="modal-button">Contact me</button>
+
+      <div class="modal" id="myModal">
+        <form class="contact-form">
+            <span class="close">&times;</span>
+            <p>
+              <span class="input-name">Name</span>
+              <input type="text" name="userName" value="" pattern="[A-Za-z][A-Za-z ]{3,}" required>
+              <span class="error-name"></span>
+            </p>
+
+            <p>
+              <span class="input-name">Email</span>
+              <input type="email" name="email" value="" required>
+              <span class="error-email"></span>
+            </p>
+
+            <p>
+              <span class="input-name">Title</span>
+              <input type="text" name="title" value=""  pattern="[A-Za-z][A-Za-z ]{3,}" required>
+            </p>
+
+            <p>
+              <span class="input-name">Message</span>
+              <textarea name="message" value="" placeholder="Write your message here" minlength="20"></textarea>
+              <span class="error-message"></span>
+            </p>
+          <input type="submit" class="submit-button">
+        </form>
+
+      </div>
+
       <div class="head">
         <span class="cover-photo">
           <img src="https://res.cloudinary.com/dqpoj0kcn/image/upload/c_scale,h_100,w_100/v1566551503/caleb.jpg" alt="">
@@ -149,5 +181,6 @@
       </div>
 
     </div>
+  <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
